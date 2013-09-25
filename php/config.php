@@ -1,8 +1,8 @@
 <?php
 if(!defined('CONFIG')) {
 	date_default_timezone_set("America/Denver");
-	define("TEMPLATE_PATH", "/templates");
-	define("IMAGE_PATH", "/images");
+	define("TEMPLATE_PATH", "templates");
+	define("IMAGE_PATH", "images");
 	
 	define("SITE_NAME", "Russell Chapman");
 	define("NUM_ARTICLES_PAGE", 5);
