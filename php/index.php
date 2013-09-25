@@ -1,6 +1,7 @@
 <?php
-echo 'here';
-error_reporting(22527);
+ini_set('display_errors','On');
+ini_set('error_reporting','E_ALL | E_STRICT');
+error_reporting(E_ALL);
 require_once('config.php');
 require_once('lib/php-activerecord/ActiveRecord.php');
 
