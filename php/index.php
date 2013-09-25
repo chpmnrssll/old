@@ -1,4 +1,5 @@
 <?php
+echo 'here';
 error_reporting(22527);
 require_once('/config.php');
 require_once('/lib/php-activerecord/ActiveRecord.php');
