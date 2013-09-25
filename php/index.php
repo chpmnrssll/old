@@ -1,8 +1,8 @@
 <?php
 echo 'here';
 error_reporting(22527);
-require_once('/config.php');
-require_once('/lib/php-activerecord/ActiveRecord.php');
+require_once('config.php');
+require_once('lib/php-activerecord/ActiveRecord.php');
 
 ActiveRecord\Config::initialize(function($cfg) {
 	$cfg->set_model_directory('models');
