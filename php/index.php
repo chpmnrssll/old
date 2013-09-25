@@ -2,8 +2,8 @@
 ini_set('display_errors','On');
 ini_set('error_reporting','E_ALL | E_STRICT');
 error_reporting(E_ALL);
-require_once("$OPENSHIFT_REPO_DIR/config.php");
-require_once("$OPENSHIFT_REPO_DIR/lib/php-activerecord/ActiveRecord.php");
+require_once("$OPENSHIFT_HOMEDIR/app-root/runtime/repo/config.php");
+require_once("$OPENSHIFT_HOMEDIR/app-root/runtime/repo/lib/php-activerecord/ActiveRecord.php");
 
 ActiveRecord\Config::initialize(function($cfg) {
 	$cfg->set_model_directory('models');
