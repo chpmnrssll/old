@@ -1,4 +1,5 @@
 <?php
+echo($_ENV['OPENSHIFT_MYSQL_DB_URL'] . '<br/>');
 ini_set('display_errors','On');
 ini_set('error_reporting','E_ALL | E_STRICT');
 error_reporting(E_ALL);
@@ -8,7 +9,7 @@ require_once('lib/php-activerecord/ActiveRecord.php');
 ActiveRecord\Config::initialize(function($cfg) {
 	$cfg->set_model_directory('models');
 	//$cfg->set_connections(array('development' => 'mysql://root:@localhost/cms'));
-	$cfg->set_connections(array('development' => 'mysql://'.$_ENV['OPENSHIFT_MYSQL_DB_HOST'].':'.$_ENV['OPENSHIFT_MYSQL_DB_PORT'].'/cms'));
+	$cfg->set_connections(array('development' => $_ENV['OPENSHIFT_MYSQL_DB_URL'].'cms'));
 });
 
 $action = isset($_GET['action']) ? $_GET['action'] : null;
