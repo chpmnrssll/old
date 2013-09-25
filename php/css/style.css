@@ -1,0 +1,293 @@
+html { overflow-y: scroll }
+
+body {
+    width: 800px;
+    margin: 0 auto; padding: 0;
+    font-size: 85%;		/*62.5% = 1.0em = 10px */
+    text-align: left;
+    background: #EEE;
+    font-family: 'Pontano Sans', Verdana, Helvetica, sans-serif;
+    nowhitespace: afterproperty;
+    background-image: url("../images/bg.png");
+    clear: both;
+}
+
+h1 {
+    margin: 0.5em 0 0.15em 0.15em;
+    text-shadow: 2px 2px 4px #888;
+    font: 400 60px/1.3 'Bevan', Georgia, serif;
+}
+
+h2 {
+    text-shadow: 1px 1px 2px #AAA;
+    font: 400 30px/1.3 'Bevan', Georgia, serif;
+}
+
+h3 {
+    text-shadow: 1px 1px 2px #CCC;
+    font: 400 20px/1.3 'Bevan', Georgia, serif;
+}
+
+a:link, a:visited {
+    color: #4B6195;
+    text-decoration: none;
+	transition: color .25s ease-in-out;
+   -moz-transition: color .25s ease-in-out;
+   -webkit-transition: color .25s ease-in-out;
+ }
+
+a:hover, a:active { color: #DFB562 }
+
+a.admin:link, a.admin:visited {
+    color: #954B4B;
+    font-weight: bold;
+    text-decoration: none
+}
+
+.description {
+    margin-top: -24px;
+    font-size: smaller;
+    font-style: italic
+}
+
+header.main {
+    width: 800px;
+    margin: 0 auto; padding: 0 0 0 0;
+    background: -webkit-linear-gradient(top, #EEE, #FFF);
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.4);
+    border-radius: 5px;
+    -moz-box-shadow: 0 10px 10px rgba(0,0,0, 0.4);
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0 10px 10px rgba(0,0,0, 0.4);
+    -webkit-border-radius: 5px;
+}
+
+    header.main nav {
+        width: 800px; height: 40px;
+        margin: 0 auto 2em auto; padding: 0;
+        font-size: 110%;
+        text-align: center;
+        background: #000;
+        line-height: 30px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        -moz-border-radius-bottomright: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+    }
+
+        header.main nav a.active {
+            color: #FFF;
+            background: #C3A364;
+        }
+
+        header.main nav a:hover, header.main nav a:active {
+            color: #FFF;
+            background: #DFB662 !important;
+			transition: background .25s ease-in;
+			-moz-transition: background .25s ease-in;
+			-webkit-transition: background .25s ease-in;
+        }
+
+        header.main nav a:link, header.main nav a:visited {
+            display: inline-block;
+            height: 30px;
+            padding: 5px 1.5em;
+            color: #FFF;
+            text-decoration: none;
+            text-shadow: 1px 1px 2px #444
+			transition: background .25s ease-in;
+			-moz-transition: background .25s ease-in;
+			-webkit-transition: background .25s ease-in;
+        }
+
+        header.main nav li {
+            float: left; display: inline;
+            margin: 0
+        }
+
+        header.main nav ul {
+            width: 800px;
+            margin: 0 auto;
+            color: #FFF;
+            list-style: none
+        }
+
+header.article h3 { 
+	margin: 0;
+}
+
+img.preview {
+    float: left;
+    margin: 0 10px 0 0;
+    border: 1px solid #EEEEEE
+}
+
+section.articles {
+    width: 760px;
+    margin-bottom: 2em;
+    padding: 20px 20px;
+    background: #FFF;
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.4);
+    border-radius: 5px;
+    -moz-box-shadow: 0 10px 10px rgba(0,0,0, 0.4);
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0 10px 10px rgba(0,0,0, 0.4);
+    -webkit-border-radius: 5px;
+    overflow: hidden;
+}
+
+    section.articles li.links {
+        padding: 0;
+        border: 0
+    }
+
+    section.articles ul {
+        padding: 1em 1em 1em 1em;
+        list-style: none
+    }
+
+    section.articles li {
+        padding: 1em 3em 1em 2em;
+        border-bottom: 1px solid #EEE
+    }
+
+    section.articles li:last-child {     border: 0 }
+
+    section.articles h3 {     margin-bottom: 0 }
+
+article.excerpt {
+    padding: 1em 0 1em;
+    overflow: auto
+}
+
+article.full {
+    width: 760px;
+    margin-bottom: 2em;
+    padding: 20px 20px;
+    background: #FFF;
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.4);
+    border-radius: 5px;
+    -moz-box-shadow: 0 10px 10px rgba(0,0,0, 0.4);
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0 10px 10px rgba(0,0,0, 0.4);
+    -webkit-border-radius: 5px;
+    overflow: hidden;
+}
+
+article address, article time, article span.tags {
+    color: #888;
+    font-size: smaller;
+    font-style: italic
+}
+
+footer.main {
+    margin-bottom: 2em;
+    padding: 0.2em;
+    text-align: center;
+    background: -webkit-linear-gradient(bottom, #EEE, #FFF);
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.4);
+    border-radius: 5px;
+    -moz-box-shadow: 0 10px 10px rgba(0,0,0, 0.4);
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0 10px 10px rgba(0,0,0, 0.4);
+    -webkit-border-radius: 5px;
+}
+
+span.newer {
+    float: left;
+    height: 22px;
+    padding: 2px 12px;
+    background: -webkit-linear-gradient(bottom, #EEE, #FFF);
+    line-height: 22px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 1px solid #EEE;
+}
+
+span.older {
+    float: right;
+    height: 22px;
+    padding: 2px 12px;
+    background: -webkit-linear-gradient(bottom, #EEE, #FFF);
+    line-height: 22px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 1px solid #EEE;
+}
+
+/* ===[ Tables ]=== */
+
+table.admin {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+}
+
+    table.admin tr, table.admin th, table.admin td {
+        margin: 0; padding: 4px;
+        text-align: left
+    }
+
+    table.admin tr:nth-child(even) { background: #FFFFFF }
+
+    table.admin tr:nth-child(odd) { background: #EEEEF0 }
+
+    table.admin tr:hover {
+        background: #C0C0E0;
+        cursor: pointer;
+    }
+
+    table.admin th {
+        color: #FFF;
+        border: 1px solid #000000;
+        border-left: none; border-right: none;
+        background: #C0C0E0;
+        cursor: default;
+    }
+
+/* ===[ Edit article form ]=== */
+
+form.edit {
+    margin: 20px auto; padding: 40px 20px;
+    overflow: auto
+}
+
+    form.edit input[type="submit"] {     cursor: pointer }
+
+    form.edit input[type="submit"] {
+        float: right; display: inline;
+        width: 12em;
+        padding: 10px;
+        color: #954B4B;
+        font-weight: bold;
+        text-align: center;
+        background: #FFF;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border: 2px solid #EEE;
+    }
+
+    form.edit textarea {
+        height: 5em;
+        font-size: 0.9em;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        line-height: 1.5em;
+    }
+
+    form.edit input, form.edit textarea {
+        display: block;
+        width: 80%;
+        margin: 0.2em; padding: 0.4em;
+        border: 2px solid #EEE
+    }
+
+    form.edit label {
+        float: left; display: block;
+        width: 15%;
+        margin: 0.15em 0.5em 0 0; padding: 0.4em 0 0 0;
+        text-align: right;
+        clear: left
+    }
