@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors','On');
+ini_set('error_reporting','E_ALL | E_STRICT');
 require_once('config.php');
 require_once('lib/php-activerecord/ActiveRecord.php');
 
