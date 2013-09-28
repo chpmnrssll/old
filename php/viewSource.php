@@ -4,7 +4,7 @@
 	<link href="javascript/syntaxhighlighter/styles/shCore.css" rel="stylesheet" type="text/css" />
 	<link href="javascript/syntaxhighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
 	<pre class="brush: js">
-<?php include $_GET['file']; ?>
+<?php include 'php/' . $_GET['file']; ?>
 	</pre>
 	<script type="text/javascript">SyntaxHighlighter.all()</script>
 <?php } else echo 'File not found.' ?>
