@@ -3,15 +3,12 @@
 <head>
 	<title><?php echo $results['title']; ?></title>
 	<meta charset="utf-8" />
-	<link rel="dns-prefetch" href="//ajax.googleapis.com">
+	<link rel="dns-prefetch" href="//ajax.googleapis.com" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bevan" type="text/css" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pontano+Sans" type="text/css" />
-	<link rel="stylesheet" href="../../javascript/fancybox/source/jquery.fancybox.css" type="text/css" />
-	<?php //echo '<style>' . file_get_contents($_ENV['OPENSHIFT_REPO_DIR'] . 'javascript/fancybox/source/jquery.fancybox.css') . '</style>'; ?>
-	<?php //echo '<style>' . file_get_contents($_ENV['OPENSHIFT_REPO_DIR'] . 'javascript/codemirror/lib/codemirror.css') . '</style>'; ?>
-	<?php //echo '<style>' . file_get_contents($_ENV['OPENSHIFT_REPO_DIR'] . 'css/style.css') . '</style>'; ?>
-	<link rel="stylesheet" href="../../javascript/codemirror/lib/codemirror.css">
-	<link rel="stylesheet" href="../../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="javascript/fancybox/source/jquery.fancybox.css" type="text/css" />
+	<link rel="stylesheet" href="javascript/codemirror/lib/codemirror.css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 </head>
 <body>
