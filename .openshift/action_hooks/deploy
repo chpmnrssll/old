@@ -19,5 +19,6 @@ fi
 ln -sf $OPENSHIFT_DATA_DIR/css $OPENSHIFT_REPO_DIR/php/css/
 ln -sf $OPENSHIFT_DATA_DIR/images $OPENSHIFT_REPO_DIR/php/images/
 ln -sf $OPENSHIFT_DATA_DIR/javascript $OPENSHIFT_REPO_DIR/php/javascript/
+ln -sf $OPENSHIFT_DATA_DIR/javascript/fancybox/source $OPENSHIFT_REPO_DIR/php/javascript/fancybox/source
 
 echo "deploy"
