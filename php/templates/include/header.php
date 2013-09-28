@@ -6,7 +6,7 @@
 	<link rel="dns-prefetch" href="//ajax.googleapis.com" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bevan" type="text/css" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pontano+Sans" type="text/css" />
-	<link rel="stylesheet" href="javascript/fancybox/source/jquery.fancybox.css" type="text/css" />
+	<link rel="stylesheet" href="javascript/fancyBox/source/jquery.fancybox.css" type="text/css" />
 	<link rel="stylesheet" href="javascript/codemirror/lib/codemirror.css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
