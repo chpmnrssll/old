@@ -13,7 +13,7 @@
 		echo '<script>alert("' . $_GET['error'] . '");</script>';
 	}
 	?>
-	<script type="text/javascript" src="javascript/fancybox/source/jquery.fancybox.pack.js" defer></script>
+	<script type="text/javascript" src="javascript/fancyBox/source/jquery.fancybox.pack.js" defer></script>
 	<script type="text/javascript" defer>
 		$(document).ready(function() {
 			$(".adminLogin").fancybox({
