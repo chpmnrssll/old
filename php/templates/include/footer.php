@@ -1,5 +1,5 @@
 	<footer class="main">
-		<p><strong><a href="index.php"><?php echo SITE_NAME; ?></a></strong> is my dumping ground of code, projects, and resources. &copy;<em><a href="index.php?action=about">Russell Chapman</a></em> &nbsp;2013.</p>
+		<p><strong><a href="index.php">&copy;<em><a href="index.php?action=about">Russell Chapman</a></em> &nbsp;2013.</p>
 		<?php
 			if(loggedIn()) {
 				include "templates/admin/loggedInControls.php";
